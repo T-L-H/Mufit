@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+
+
+<link rel="stylesheet" href="css.css">
+
+<body class="w3-content" style="max-width:1300px" id="body">
+
+
+  <div class="w3-row">
+    <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+      <div class="w3-padding-64">
+        <button onclick="shoes()" id="shoes">
+          <h1 id="shoeh1">Shoes</h1>
+        </button>
+      </div>
+      <div class="w3-padding-64">
+        <ol id="hidden2">
+          <li>
+            <button value="1" onclick="done()"
+              class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Disco Fever</button>
+          </li>
+          <li>
+            <button value="2" onclick="dtwo()"
+              class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Barnyard Jig</button>
+          </li>
+          <li>
+            <button value="3" onclick="dthree()"
+              class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Morning Toe-Tapper</button>
+          </li>
+          <li>
+            <button value="4" onclick="dfour()"
+              class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Celebration Time</button>
+          </li>
+          <li>
+            <button value="5" onclick="dfive()"
+              class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Calling Out</button>
+          </li>
+          <li>
+            <button value="6" onclick="dsix()"
+              class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Chaos Revolution</button>
+          </li>
+          <li>
+            <button value="7" onclick="dseven()"
+              class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Sundown Chillin'</button>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+      <div class="w3-padding-64 w3-center">
+
+        <button onclick="pillow(); amazing()" id="amazing">
+          <h1>Pillow</h1>
+        </button>
+        <div class="w3-left-align w3-padding-large">
+          <ol id="hidden">
+            <li>
+              <button value="1" onclick="one()"
+                class="w3-button w3-blue-grey w3-block w3-hover-cyan w3-padding-16">Piano Relaxation</button>
+            </li>
+            <li>
+              <button value="2" onclick="two()"
+                class="w3-button w3-blue-grey w3-block w3-hover-cyan w3-padding-16">Sweet Strum</button>
+            </li>
+            <li>
+              <button value="3" onclick="three()"
+                class="w3-button w3-blue-grey w3-block w3-hover-cyan w3-padding-16">Rising Up</button>
+            </li>
+            <li>
+              <button value="4" onclick="four()"
+                class="w3-button w3-blue-grey w3-block w3-hover-cyan w3-padding-16">Chill Beats</button>
+            </li>
+            <li>
+              <button value="5" onclick="five()"
+                class="w3-button w3-blue-grey w3-block w3-hover-cyan w3-padding-16">Morning Vibes</button>
+            </li>
+            <li>
+              <button value="6" onclick="six()"
+                class="w3-button w3-blue-grey w3-block w3-hover-cyan w3-padding-16">Midnight Wandering</button>
+            </li>
+            <li>
+              <button value="7" onclick="seven()"
+                class="w3-button w3-blue-grey w3-block w3-hover-cyan w3-padding-16">Fairy Choir</button>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+      <div class="w3-padding-64">
+        <button onclick="workout()" id="workout">
+          <h1>Workout</h1>
+        </button>
+
+      </div>
+      <div class="w3-row">
+        <ol id="hidden3">
+          <li>
+            <button value="1" onclick="wdone()"
+              class="w3-button w3-light-grey w3-block w3-hover-blue-grey w3-padding-16">Electronic Sky Battle</button>
+          </li>
+          <li>
+            <button value="2" onclick="wdtwo()"
+              class="w3-button w3-light-grey w3-block w3-hover-blue-grey w3-padding-16">Imperial March</button>
+          </li>
+          <li>
+            <button value="3" onclick="wdthree()"
+              class="w3-button w3-light-grey w3-block w3-hover-blue-grey w3-padding-16">Inward Battle</button>
+          </li>
+          <li>
+            <button value="4" onclick="wdfour()"
+              class="w3-button w3-light-grey w3-block w3-hover-blue-grey w3-padding-16">Boss Fight</button>
+          </li>
+          <li>
+            <button value="5" onclick="wdfive()"
+              class="w3-button w3-light-grey w3-block w3-hover-blue-grey w3-padding-16">Morning Vibes</button>
+          </li>
+          <li>
+            <button value="6" onclick="wdsix()"
+              class="w3-button w3-light-grey w3-block w3-hover-blue-grey w3-padding-16">Cease The Day</button>
+          </li>
+          <li>
+            <button value="7" onclick="wdseven()"
+              class="w3-button w3-light-grey w3-block w3-hover-blue-grey w3-padding-16">New Day</button>
+          </li>
+        </ol>
+
+      </div>
+
+
+    </div>
+    <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+      <div class="w3-padding-64 w3-center">
+        <h2>Your Stats!</h2>
+        <br>
+        <br>
+        <br>
+        <p id="output">Your Steps:</p>
+        <br>
+        <br>
+        <br>
+        <p id="output2">How Long You Slept With The Pillow:</p>
+        <br>
+        <br>
+        <br>
+        <p id="output3">Your Workout Reps:</p>
+        <br>
+        <br>
+        <br>
+      </div>
+
+
+
+</body>
+<script>
+  var tryinitout = 0;
+  var tryinitout2 = 0;
+  var tryinitout3 = 0;
+  var heyo = localStorage.getItem('NUMBER');
+  var heyo2 = localStorage.getItem('NUMBER2');
+  var heyo3 = localStorage.getItem('NUMBER3');
+
+  tryinitout = heyo;
+  tryinitout2 = heyo2;
+  tryinitout3 = heyo3;
+  var c = 0;
+  var i = -1
+  var t;
+  var timer_is_on = 0;
+
+  window.onload = function exampleFunction() {
+    localStorage.setItem("number", "play");
+    localStorage.removeItem("numbering");
+    localStorage.removeItem("timer");
+    localStorage.removeItem("StopPlaying");
+    localStorage.removeItem("theone");
+    document.getElementById("hidden").style.display = "none";
+    document.getElementById("hidden2").style.display = "none";
+    document.getElementById("hidden3").style.display = "none";
+  }
+
+  function shoes() {
+    localStorage.removeItem("numbering");
+    localStorage.removeItem("StopPlaying");
+    localStorage.setItem("bug", false)
+
+    const removeElements = (elms) => elms.forEach(el => el.remove());
+    removeElements(document.querySelectorAll(".remove"));
+    const removeElements2 = (elms2) => elms2.forEach(el2 => el2.remove());
+    removeElements2(document.querySelectorAll(".H"));
+    document.getElementById("hidden").style.display = "none";
+    document.getElementById("hidden2").style.display = "block";
+    document.getElementById("hidden3").style.display = "none";
+
+    var audio = document.createElement('audio');
+    audio.id = "shoe";
+
+    audio.autoplay = true;
+    var song2 = localStorage.getItem("song2");
+    audio.src = 'Shoes' + song2 + '.mp3';
+    document.getElementById('body').appendChild(audio);
+
+    audio.pause();
+
+
+
+    document.body.onkeyup = function (e) {
+
+      if (e.keyCode == 32) {
+        i++;
+        document.getElementById("output3").style.display = "block";
+        document.getElementById('output3').innerHTML = "Your Steps: " + ++tryinitout3;
+        localStorage.setItem('NUMBER3', tryinitout3);
+        audio.currentTime = i;
+
+        audio.play();
+        setTimeout(function () {
+
+          audio.pause()
+        }, 1000)
+
+      }
+    }
+
+  }
+
+  function myFunction() {
+    myVar = setTimeout(function () {
+      alert("Hello");
+    }, 3000);
+  }
+
+  function pillow() {
+    localStorage.removeItem("numbering");
+    localStorage.removeItem("StopPlaying");
+    document.getElementById("hidden").style.display = "block";
+
+    document.getElementById("hidden2").style.display = "none";
+    document.getElementById("hidden3").style.display = "none";
+    const removeElements2 = (elms2) => elms2.forEach(el2 => el2.remove());
+    removeElements2(document.querySelectorAll(".H"));
+    var song = localStorage.getItem("song");
+
+    var timing = localStorage.getItem('timer');
+    var audio = document.createElement('audio');
+    audio.autoplay = true;
+
+    audio.src = "Pillow" + song + '.mp3';
+    audio.currentTime = timing;
+    audio.pause();
+    audio.loop = true;
+    audio.id = "pillow";
+    audio.className = "remove";
+    audio.currentTime = timing;
+
+    document.getElementById('body').appendChild(audio);
+    var playing = false;
+
+
+    document.body.onkeydown = function (e) {
+      if (e.keyCode == 32 && !playing) {
+
+        audio.play();
+        var bug = true;
+        var bug2 = localStorage.getItem("bug");
+        if (bug2 != null) {
+          bug = bug2;
+        }
+        if (bug != true) {
+          audio.pause();
+          audio.muted = true;
+        }
+
+        playing = true;
+        if (!timer_is_on) {
+          timer_is_on = 1;
+          timedCount();
+        }
+      }
+
+    }
+
+    document.body.onkeyup = function (e) {
+      if (e.keyCode == 32) {
+        audio.pause();
+        playing = false;
+        clearTimeout(t);
+        timer_is_on = 0;
+      }
+    }
+
+
+  }
+
+  function workout() {
+    localStorage.setItem("bug", false)
+    document.getElementById("hidden").style.display = "none";
+    document.getElementById("hidden2").style.display = "none";
+    document.getElementById("hidden3").style.display = "block";
+    var stopPlaying = localStorage.getItem("StopPlaying");
+
+
+    var numbering = Number(localStorage.getItem("numbering"));
+
+    localStorage.setItem("remember", numbering);
+
+
+    var audio = document.createElement('audio');
+    audio.autoplay = true;
+
+    audio.src = numbering + '.mp3';
+
+
+    document.body.onkeyup = function (e) {
+
+      if (e.keyCode == 32) {
+        localStorage.setItem("StopPlaying", true);
+        document.getElementById('output').style.display = "block";
+        document.getElementById('output').innerHTML = "Your Workout Reps: " + ++tryinitout;
+        localStorage.setItem('NUMBER', tryinitout);
+
+        localStorage.setItem("numbering", ++numbering);
+        console.log(numbering);
+
+      }
+    }
+  }
+
+
+
+  function play() {
+    var audio = document.createElement('audio');
+    audio.autoplay = true;
+    var song3 = localStorage.getItem("song3");
+    audio.src = 'Workout' + song3 + '.mp3';
+
+    audio.className = "H";
+    audio.id = "H";
+    audio.play();
+    audio.volume = 1;
+    document.getElementById('body').appendChild(audio);
+
+  }
+
+  function timedCount() {
+    document.getElementById("output2").style.display = "block";
+    localStorage.setItem('timer', c);
+
+    c = c + 1;
+    document.getElementById('output2').innerHTML = "How Long You Slept with The Pillow: " + c;
+    localStorage.setItem('NUMBER2', c);
+
+    t = setTimeout(timedCount, 1000);
+  }
+
+  function one() {
+
+    localStorage.setItem('song', 1);
+    pillow();
+  }
+
+  function two() {
+    localStorage.setItem('song', 2);
+    pillow();
+  }
+
+  function three() {
+    localStorage.setItem('song', 3);
+    pillow();
+  }
+
+  function four() {
+    localStorage.setItem('song', 4);
+    pillow();
+  }
+
+  function five() {
+    localStorage.setItem('song', 5);
+    pillow();
+  }
+
+  function six() {
+    localStorage.setItem('song', 6);
+    pillow();
+  }
+
+  function seven() {
+    localStorage.setItem('song', 7);
+    pillow();
+  }
+
+
+  function done() {
+
+    localStorage.setItem('song2', 1);
+    shoes();
+  }
+
+  function dtwo() {
+    localStorage.setItem('song2', 2);
+    shoes();
+  }
+
+  function dthree() {
+    localStorage.setItem('song2', 3);
+    shoes();
+  }
+
+  function dfour() {
+    localStorage.setItem('song2', 4);
+    shoes();
+  }
+
+  function dfive() {
+    localStorage.setItem('song2', 5);
+    shoes();
+  }
+
+  function dsix() {
+    localStorage.setItem('song2', 6);
+    shoes();
+  }
+
+  function dseven() {
+    localStorage.setItem('song2', 7);
+    shoes();
+  }
+
+  function wdone() {
+    var theone = localStorage.getItem("theone");
+    var audio = document.createElement('audio');
+    if (theone === "dos") {
+      var deleteaudio2 = document.getElementById("dos");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "tres") {
+      var deleteaudio2 = document.getElementById("tres");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "quatro") {
+      var deleteaudio2 = document.getElementById("quatro");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "cinco") {
+      var deleteaudio2 = document.getElementById("cinco");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seyte") {
+      var deleteaudio2 = document.getElementById("seyte");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seis") {
+      var deleteaudio2 = document.getElementById("seis");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+
+
+    audio.src = 'Workout' + 1 + '.mp3';
+
+    audio.className = "H";
+    audio.id = "uno";
+    var tryit = localStorage.getItem("number");
+
+    if (tryit === "play") {
+      audio.play();
+      localStorage.setItem("theone", "uno")
+    }
+
+    localStorage.setItem("number", "");
+    audio.volume = 0.15;
+    document.getElementById('body').appendChild(audio);
+    document.getElementById('workout').click();
+  }
+
+  function wdtwo() {
+    var theone = localStorage.getItem("theone");
+    var audio = document.createElement('audio');
+    if (theone === "uno") {
+      var deleteaudio2 = document.getElementById("uno");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "tres") {
+      var deleteaudio2 = document.getElementById("tres");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "quatro") {
+      var deleteaudio2 = document.getElementById("quatro");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "cinco") {
+      var deleteaudio2 = document.getElementById("cinco");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seyte") {
+      var deleteaudio2 = document.getElementById("seyte");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seis") {
+      var deleteaudio2 = document.getElementById("seis");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    audio.src = 'Workout' + 2 + '.mp3';
+
+    audio.className = "H";
+    audio.id = "dos";
+    var tryit = localStorage.getItem("number");
+
+    if (tryit === "play") {
+      audio.play();
+      localStorage.setItem("theone", "dos")
+    }
+
+    localStorage.setItem("number", "");
+    audio.volume = 0.15;
+    document.getElementById('body').appendChild(audio);
+    document.getElementById('workout').click();
+  }
+
+  function wdthree() {
+    var theone = localStorage.getItem("theone");
+    var audio = document.createElement('audio');
+    if (theone === "uno") {
+      var deleteaudio2 = document.getElementById("uno");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "dos") {
+      var deleteaudio2 = document.getElementById("dos");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "quatro") {
+      var deleteaudio2 = document.getElementById("quatro");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "cinco") {
+      var deleteaudio2 = document.getElementById("cinco");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seyte") {
+      var deleteaudio2 = document.getElementById("seyte");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seis") {
+      var deleteaudio2 = document.getElementById("seis");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+
+    audio.src = 'Workout' + 3 + '.mp3';
+
+    audio.className = "H";
+    audio.id = "tres";
+    var tryit = localStorage.getItem("number");
+
+    if (tryit === "play") {
+      audio.play();
+      localStorage.setItem("theone", "tres")
+    }
+    localStorage.setItem("number", "");
+    audio.volume = 0.15;
+    document.getElementById('body').appendChild(audio);
+    document.getElementById('workout').click();
+  }
+
+  function wdfour() {
+    var theone = localStorage.getItem("theone");
+    var audio = document.createElement('audio');
+    if (theone === "uno") {
+      var deleteaudio2 = document.getElementById("uno");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "dos") {
+      var deleteaudio2 = document.getElementById("dos");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "tres") {
+      var deleteaudio2 = document.getElementById("tres");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "cinco") {
+      var deleteaudio2 = document.getElementById("cinco");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seyte") {
+      var deleteaudio2 = document.getElementById("seyte");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seis") {
+      var deleteaudio2 = document.getElementById("seis");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+
+    audio.src = 'Workout' + 4 + '.mp3';
+
+    audio.className = "H";
+    audio.id = "quatro";
+    var tryit = localStorage.getItem("number");
+
+    if (tryit === "play") {
+      audio.play();
+      localStorage.setItem("theone", "quatro")
+    }
+    localStorage.setItem("number", "");
+    audio.volume = 0.15;
+    document.getElementById('body').appendChild(audio);
+    document.getElementById('workout').click();
+  }
+
+  function wdfive() {
+    var theone = localStorage.getItem("theone");
+    var audio = document.createElement('audio');
+    if (theone === "uno") {
+      var deleteaudio2 = document.getElementById("uno");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "dos") {
+      var deleteaudio2 = document.getElementById("dos");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "tres") {
+      var deleteaudio2 = document.getElementById("tres");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "quatro") {
+      var deleteaudio2 = document.getElementById("quatro");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seyte") {
+      var deleteaudio2 = document.getElementById("seyte");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seis") {
+      var deleteaudio2 = document.getElementById("seis");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+
+
+    audio.src = 'Workout' + 5 + '.mp3';
+
+    audio.className = "H";
+    audio.id = "cinco";
+    var tryit = localStorage.getItem("number");
+
+    if (tryit === "play") {
+      audio.play();
+      localStorage.setItem("theone", "cinco")
+    }
+    localStorage.setItem("number", "");
+    audio.volume = 0.15;
+    document.getElementById('body').appendChild(audio);
+    document.getElementById('workout').click();
+  }
+
+  function wdsix() {
+    var theone = localStorage.getItem("theone");
+    var audio = document.createElement('audio');
+    if (theone === "uno") {
+      var deleteaudio2 = document.getElementById("uno");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "dos") {
+      var deleteaudio2 = document.getElementById("dos");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "tres") {
+      var deleteaudio2 = document.getElementById("tres");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "quatro") {
+      var deleteaudio2 = document.getElementById("quatro");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "cinco") {
+      var deleteaudio2 = document.getElementById("cinco");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seis") {
+      var deleteaudio2 = document.getElementById("seis");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+
+
+    audio.src = 'Workout' + 6 + '.mp3';
+
+    audio.className = "H";
+    audio.id = "seyte";
+    var tryit = localStorage.getItem("number");
+
+    if (tryit === "play") {
+      audio.play();
+      localStorage.setItem("theone", "seyte")
+    }
+    localStorage.setItem("number", "");
+    audio.volume = 0.15;
+    document.getElementById('body').appendChild(audio);
+    document.getElementById('workout').click();
+  }
+
+  function wdseven() {
+    var theone = localStorage.getItem("theone");
+    var audio = document.createElement('audio');
+    if (theone === "uno") {
+      var deleteaudio2 = document.getElementById("uno");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "dos") {
+      var deleteaudio2 = document.getElementById("dos");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "tres") {
+      var deleteaudio2 = document.getElementById("tres");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "quatro") {
+      var deleteaudio2 = document.getElementById("quatro");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "cinco") {
+      var deleteaudio2 = document.getElementById("cinco");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+    if (theone === "seyte") {
+      var deleteaudio2 = document.getElementById("seyte");
+      deleteaudio2.remove();
+      localStorage.removeItem("theone");
+      localStorage.setItem("number", "play")
+    }
+
+
+    audio.src = 'Workout' + 7 + '.mp3';
+
+    audio.className = "H";
+    audio.id = "seis";
+    var tryit = localStorage.getItem("number");
+
+    if (tryit === "play") {
+      audio.play();
+      localStorage.setItem("theone", "seis")
+    }
+    localStorage.setItem("number", "");
+    audio.volume = 0.15;
+    document.getElementById('body').appendChild(audio);
+    document.getElementById('workout').click();
+  }
+
+
+
+
+
+
+  function amazing() {
+    localStorage.removeItem("bug");
+  }
+</script>
+
+</html>
